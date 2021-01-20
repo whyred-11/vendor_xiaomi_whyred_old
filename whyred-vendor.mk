@@ -18,7 +18,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/whyred
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/whyred/proprietary/bin/chargeonlymode:$(TARGET_COPY_OUT_SYSTEM)/bin/chargeonlymode \
     vendor/xiaomi/whyred/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
     vendor/xiaomi/whyred/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
     vendor/xiaomi/whyred/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
@@ -746,7 +745,8 @@ PRODUCT_PACKAGES += \
     daxService \
     MotoDolbyV3 \
     android.hardware.gnss@2.0-service-qti \
-    vendor.qti.gnss@3.0-service
+    vendor.qti.gnss@3.0-service \
+    chargeonlymode
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/vendor/etc/MIUI_DualCamera_watermark.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png \
