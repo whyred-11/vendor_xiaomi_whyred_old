@@ -77,7 +77,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/product/framework/dpmapi.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
     vendor/xiaomi/whyred/proprietary/product/framework/qcrilhook.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcrilhook.jar \
     vendor/xiaomi/whyred/proprietary/product/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.esepowermanager@1.0.so \
-    vendor/xiaomi/whyred/proprietary/product/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.ant@1.0.so \
+    vendor/xiaomi/whyred/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/whyred/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/whyred/proprietary/product/lib64/lib-imscamera.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imscamera.so \
     vendor/xiaomi/whyred/proprietary/product/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/lib-imsvideocodec.so \

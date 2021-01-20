@@ -20,21 +20,22 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libantradio",
+	name: "libthermalclient",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/lib/libantradio.so"],
+			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/lib64/libantradio.so"],
+			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
 		},
 	},
 	compile_multilib: "both",
 	prefer: true,
+        soc_specific: true,
         check_elf_files: false,
 }
 
@@ -50,26 +51,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgpustats.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-        check_elf_files: false,
-}
-
-cc_prebuilt_library_shared {
-	name: "libthermalclient",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -95,6 +76,26 @@ cc_prebuilt_library_shared {
 	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
+        check_elf_files: false,
+}
+
+cc_prebuilt_library_shared {
+	name: "libantradio",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/system_ext/lib/libantradio.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/system_ext/lib64/libantradio.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	system_ext_specific: true,
         check_elf_files: false,
 }
 
